@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "publication_id": "1790438134-22019",
+  "tap": "xiaoran007/bottles",
+  "root_url": "https://ghcr.io/v2/xiaoran007/bottles",
+  "roots": [
+    "sqlite"
+  ],
+  "environment": {
+    "macos": "14.8.3",
+    "os_build": "23J220",
+    "arch": "arm64",
+    "prefix": "/opt/homebrew",
+    "brew_commit": "570982948a8a194f0f42f43f4a5bce2d1c9f64cb",
+    "core_commit": "7b3f48fb2c178ed56c95cf80e21d38de15cc1da3",
+    "xcode": "Xcode 16.1\nBuild version 16B40",
+    "sdk": "15.1",
+    "guest_agent_sha256": "96efc6e97c1e1ad35891842f0a4163a37a226771e846c3f790df0a1ac9bfa4bc",
+    "cpus": "6",
+    "clt": "package-id: com.apple.pkg.CLTools_Executables\nversion: 16.2.0.0.1.1733547573\nvolume: /\nlocation: /\ninstall-time: 1765896876",
+    "image": "ghcr.io/cirruslabs/macos-sonoma-xcode@sha256:f181b76eede9acd7a6db76438a4cf73e76550c3f9e8104aed16347122e132184",
+    "policy": "runtime-source-build-official-bootstrap-v1"
+  },
+  "formulas": {
+    "readline": {
+      "version": "8.3.6",
+      "revision": 0,
+      "upstream_sha256": "ead60941ba0f81334499b208e26382eefda15eb1b9614c417d70f1d827dc2e64",
+      "build_key": "eede328f89d2f3789bc4a5cc6def1749e0aadce796ac8592841fe817783c9aef",
+      "formula_sha256": "d2431b8886a92718c74e1bac317dcdc57bf2ae3c8c5edce94859e651b3ebe9d7",
+      "archive_sha256": "9f2677da6d4bf058927840abcb0e179882325e26241ffc84be03adcfa704f410",
+      "bottle_tag": "arm64_sonoma",
+      "cellar": "any",
+      "rebuild": 0,
+      "runtime_dependencies": [],
+      "image": "ghcr.io/xiaoran007/bottles/readline:8.3.6",
+      "oci_digest": "sha256:dee1064fbd466fb6200dd1759726ab9a66d659c4f901844dca9260d8c87fbe43"
+    },
+    "sqlite": {
+      "version": "3.53.4",
+      "revision": 0,
+      "upstream_sha256": "72beb735cdbdbe21ff6134ac65df742c4b4c31a3511a88d979917ce37579c67a",
+      "build_key": "3d7609617c1d22d11c26787911430dab0b31d9f15c018b62b4be91e27e4c883f",
+      "formula_sha256": "ac676a93a009f6af38518d80ac33252b906e18db6421122a04cb89e13747b676",
+      "archive_sha256": "3abc9b4a41f74097654994aa0df6f23ac58b22809b524b520058df424677721a",
+      "bottle_tag": "arm64_sonoma",
+      "cellar": "any",
+      "rebuild": 0,
+      "runtime_dependencies": [
+        "readline"
+      ],
+      "image": "ghcr.io/xiaoran007/bottles/sqlite:3.53.4",
+      "oci_digest": "sha256:55f47ddcba208e3a2ac698f3b9e6ae559fcd9036277d3eb74754ebdbab76ff3d"
+    }
+  },
+  "verification": {
+    "public_install": "passed",
+    "root_only_request": true,
+    "vm": "legacybrew-public-1790438909-28221",
+    "runtime_inventory": [
+      "readline 8.3.6",
+      "sqlite 3.53.4"
+    ],
+    "passed_formula_tests": [
+      "readline",
+      "sqlite"
+    ],
+    "linkage_checks": [
+      "readline",
+      "sqlite"
+    ]
+  }
+}
