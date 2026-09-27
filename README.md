@@ -1,10 +1,8 @@
 # LegacyBrew bottles
 
-This is the public **distribution repository** for [LegacyBrew](https://github.com/xiaoran007/LegacyBrew). It contains the `xiaoran007/bottles` Homebrew tap: generated formulae in [`Formula/`](Formula/) and the published package registry in [`registry/v1/catalog.json`](registry/v1/catalog.json). Bottle archives are served from public GHCR. Development, build orchestration, and issue tracking belong in the LegacyBrew source repository.
+This is the public **distribution repository** for [LegacyBrew](https://github.com/xiaoran007/LegacyBrew). It contains the `xiaoran007/bottles` Homebrew tap: generated formulae in [`Formula/`](Formula/) and the published package registry in [`registry/v2/catalog.json`](registry/v2/catalog.json). Bottle archives are served from public GHCR. Development, build orchestration, and issue tracking belong in the LegacyBrew source repository.
 
 ## Availability
-
-The current public snapshot contains five formulae: `sqlite`, `readline`, `zstd`, `lz4`, and `xz`. See the registry for their exact versions, bottle hashes, and dependency records.
 
 The registry is the published availability snapshot. It records each package's supported environment, upstream formula identity, bottle, and verified managed dependencies. Only packages whose complete managed runtime closure passed installation from the candidate tap and public GHCR are advertised. A package in LegacyBrew's private build catalog is not necessarily published here.
 
@@ -12,7 +10,7 @@ The current publishing profile is macOS Sonoma 14.8.3 arm64 with Homebrew at `/o
 
 ## Install
 
-Review the [registry](registry/v1/catalog.json) and choose a published formula. To trust this entire tap, including all current and future formulae, casks, and external commands:
+Review the [registry](registry/v2/catalog.json) and choose a published formula. To trust this entire tap, including all current and future formulae, casks, and external commands:
 
 ```sh
 brew tap xiaoran007/bottles
