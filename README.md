@@ -1,12 +1,20 @@
 # LegacyBrew bottles
 
-This is the public **distribution repository** for [LegacyBrew](https://github.com/xiaoran007/LegacyBrew). It contains the `xiaoran007/bottles` Homebrew tap: generated formulae in [`Formula/`](Formula/) and the published package registry in [`registry/v2/catalog.json`](registry/v2/catalog.json). Bottle archives are served from public GHCR. Development, build orchestration, and issue tracking belong in the LegacyBrew source repository.
+## About LegacyBrew
+
+When a current Homebrew formula has no bottle for an older macOS release, installing it may require a local source build. [LegacyBrew](https://github.com/xiaoran007/LegacyBrew) aims to provide verified prebuilt bottles for selected formulae on those systems. It derives formulae from Homebrew Core, builds and tests bottles in target macOS virtual machines, and leaves installation and dependency management to Homebrew.
+
+## This repository
+
+This is LegacyBrew's public **distribution repository**, exposed to Homebrew as the `xiaoran007/bottles` tap. It holds generated formulae in [`Formula/`](Formula/) and the published availability snapshot in [`registry/v2/catalog.json`](registry/v2/catalog.json); bottle archives are served from public GHCR. The [LegacyBrew source repository](https://github.com/xiaoran007/LegacyBrew) contains the build and publishing system, project roadmap, documentation, and issue tracker.
 
 ## Availability
 
 The registry is the published availability snapshot. It records each package's supported environment, upstream formula identity, bottle, and verified managed dependencies. Only packages whose complete managed runtime closure passed installation from the candidate tap and public GHCR are advertised. A package in LegacyBrew's private build catalog is not necessarily published here.
 
-The current publishing profile is macOS Sonoma 14.8.3 arm64 with Homebrew at `/opt/homebrew`. Other systems are not verified. Homebrew Core formulae can change after publication; the registry's recorded identity must match the formula currently selected by Homebrew for the bottle to be an exact current-Core match. Direct `brew install` from this tap does not make that comparison for you. The `lbrew` client performs it, but is not yet packaged for users.
+The current publishing profile is macOS Sonoma 14.8.3 arm64 with Homebrew at `/opt/homebrew`. Other systems are not verified. The long-term goal is broader coverage of older macOS releases on both arm64 and Intel; see the [project roadmap](https://github.com/xiaoran007/LegacyBrew#roadmap).
+
+Homebrew Core formulae can change after publication. The registry's recorded identity must match the formula currently selected by Homebrew for the bottle to be an exact current-Core match. Direct `brew install` from this tap does not make that comparison for you. The `lbrew` client performs it, but is not yet packaged for users.
 
 ## Install
 
