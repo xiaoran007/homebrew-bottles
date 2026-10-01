@@ -110,7 +110,7 @@ class Readline < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/xiaoran007/bottles"
-    rebuild 1
-    sha256 cellar: :any, arm64_sonoma: "5afeb7f62970e61e873dd9442efe5b01cb3696849169b964bce43079d3556aec"
+    rebuild 2
+    sha256 cellar: :any, arm64_sonoma: "e93f6f136cc58048069b346d56301d409b12fc90127682a32700ac6aa7d97c5a"
   end
 end

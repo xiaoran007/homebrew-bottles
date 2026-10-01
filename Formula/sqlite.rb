@@ -81,7 +81,7 @@ class Sqlite < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/xiaoran007/bottles"
-    rebuild 1
-    sha256 cellar: :any, arm64_sonoma: "646ffef98c47baaf1d5c692f5d9844dad6891c0b597149c2ed94b8803e0aa367"
+    rebuild 2
+    sha256 cellar: :any, arm64_sonoma: "071b624de4fdd15baa4a50d59d45cd731ac931695107c82193622afac4e1ccb6"
   end
 end
