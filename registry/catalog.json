@@ -1,5 +1,60 @@
 {
-  "profiles": {},
+  "profiles": {
+    "sonoma-arm64-full-xcode": {
+      "environment": {
+        "arch": "arm64",
+        "macos": "14.6.1",
+        "prefix": "/opt/homebrew",
+        "profile": "sonoma-arm64-full-xcode"
+      },
+      "packages": {
+        "readline": {
+          "archive_sha256": "2d62d1f46301710d7fb17562a067720b1ab697689e63b8230e121e998815275b",
+          "bottle_tag": "arm64_sonoma",
+          "cellar": "any",
+          "dependency_artifacts": {},
+          "derived_sha256": "f66a3f190f69b1fadf4da7640ee95030ec54e1f7a455c5179c2c2ad7128bcd6f",
+          "formula_sha256": "9e4e7c09365c0e891aed745cb4be1ec4727e8451e2a4cec0846a98ac09be6ea0",
+          "image": "ghcr.io/xiaoran007/bottles/readline:8.3.6-3",
+          "oci_digest": "sha256:f485d8f7a41b36228a623abc1ff46f18a69f8847f41639dec288cbf4343b90cd",
+          "rebuild": 3,
+          "revision": 0,
+          "runtime_dependencies": [],
+          "upstream_sha256": "ead60941ba0f81334499b208e26382eefda15eb1b9614c417d70f1d827dc2e64",
+          "verification": {
+            "build": "passed",
+            "build_attempt": "1791049608-24072"
+          },
+          "version": "8.3.6"
+        },
+        "sqlite": {
+          "archive_sha256": "835e8653c698567b50f5ddf653c118f849e8d5772eb6acfac409927b9c95f337",
+          "bottle_tag": "arm64_sonoma",
+          "cellar": "any",
+          "dependency_artifacts": {
+            "readline": {
+              "archive_sha256": "2d62d1f46301710d7fb17562a067720b1ab697689e63b8230e121e998815275b"
+            }
+          },
+          "derived_sha256": "0fefa9c69416f7d243f24f01d74db486b62dab4eee74c5d6ce4ba47c78d9b48b",
+          "formula_sha256": "838c8ba7fca928021cf96ef19bf338df24b83168e9992138f85a0dc1bb55bb81",
+          "image": "ghcr.io/xiaoran007/bottles/sqlite:3.53.4-3",
+          "oci_digest": "sha256:0875daf874ab0bfab63ce9c2cad04649a2deb5dc69a798aab9f9c881c95db97a",
+          "rebuild": 3,
+          "revision": 0,
+          "runtime_dependencies": [
+            "readline"
+          ],
+          "upstream_sha256": "72beb735cdbdbe21ff6134ac65df742c4b4c31a3511a88d979917ce37579c67a",
+          "verification": {
+            "build": "passed",
+            "build_attempt": "1791049608-24072"
+          },
+          "version": "3.53.4"
+        }
+      }
+    }
+  },
   "root_url": "https://ghcr.io/v2/xiaoran007/bottles",
   "tap": "xiaoran007/bottles"
 }
